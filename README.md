@@ -5,10 +5,12 @@ The API offers various filters and limits. In this project we are mainly focusin
 
 **Execution Steps**:
 1. Clone the repository 
-2. Create docker image using the below command:
-   **docker build -t image_sbdb_close_approach_api_1.0**
+2. Enter into SBDB-close-approach-data
+   **cd SBDB-close-approach-data/**
+3. Create docker image using the below command:
+   **docker build -t sbdbcloseapproachapi:1.0 .**
 3. Start a container in interactive mode, expose port 80 to view the test results using below command
-   **docker run --name sbdb_close_approach_api_1.0 -it -p 80:7000 image_sbdb_close_approach_api_1.0**
+   **docker run --name sbdb_close_approach_api_1.0 -it -p 80:7000 sbdbcloseapproachapi:1.0**
 4. Run tests using below command:
    **python run.py [--keyword testname]**
    --keyword testname : selects the tests which contain testname in it, by default keyword is test so all tests are selected.
