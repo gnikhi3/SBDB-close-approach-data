@@ -15,16 +15,27 @@ The API offers various filters and limits. In this project we are mainly focusin
 5. Once the test execution is done, to visulaise the test report, open **http://localhost/report.html** on browser
 
 **Approach Taken:**
+
 **Project structure:**
+
 /cases/ - contains testcases 
+
 /cases/test_sbdb_close_approach_api.py - contains the tests we execute on sbdb_close_approach_api
+
 /data/ - contains data used in tests
+
 /data/data.json - file used to get data which is used to obtain expected data
+
 /qa_utilities/ - contains utility functions
+
 /qa_utilities/get_test_data.py - Contains code to fetch data from SBDB close approch API and write into /data/data.json. By executing **python qa_utilities/get_test_data.py** command, we create a data.json file in /data folder which contains data for all currently known close approaches that have happened or will happen in the 20th and 21st centuries
+
 /Dockerfile - is used to create Docker image
+
 /pip_packages.txt - file contains the packages to be installed for execution of tests
+
 /run.py - Conatins code to execute tests. By executing **python run.py** all tests within /cases folder are executed.
+
 /start.sh - Is the file that gets executed as soon as container is created. Here we are invoking http.server in background to be able to fetch the test report on browser and we are executing python qa_utilities/get_test_data.py to create data.json
 
 In this project we fetch response of https://ssd-api.jpl.nasa.gov/cad.api with zero or more filters and validate the response.
