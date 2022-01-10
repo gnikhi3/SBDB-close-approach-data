@@ -15,8 +15,8 @@ The API offers various filters and limits. In this project we are mainly focusin
 5. Once the test execution is done, to visulaise the test report, open **http://localhost/report.html** on browser
 
 **Approach Taken:**
-Project structure:
-/cases/ - contains testcases
+**Project structure:**
+/cases/ - contains testcases 
 /cases/test_sbdb_close_approach_api.py - contains the tests we execute on sbdb_close_approach_api
 /data/ - contains data used in tests
 /data/data.json - file used to get data which is used to obtain expected data
