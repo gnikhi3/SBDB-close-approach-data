@@ -1,4 +1,4 @@
-# SBDB-close-approach-data
+# SBDB-close-approach-data API test framework
 
 Test framework to test SBDB close approach data API: https://ssd-api.jpl.nasa.gov/cad.api , more information on the API is available at https://ssd-api.jpl.nasa.gov/doc/cad.html.  
 The API offers various filters and limits. In this project we are mainly focusing on testing filters. We can further develop to add on more filters and limits. We are using pytest framework for testing. 
